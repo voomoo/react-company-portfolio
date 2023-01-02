@@ -15,6 +15,7 @@
     font-size: 1rem;
     font-weight: bold;
     position: relative;
+    white-space: nowrap;
 }
 
 .NavLink:hover{
@@ -47,4 +48,36 @@
     justify-content: space-between;
     height: 100%;
     padding: 0 2rem;
+}
+
+.NavbarMobile{
+    display: none;
+}
+
+.NavbarMobile .MobileNavDrawer{
+    max-width: 100vw;
+}
+
+.NavLinkGroupMobile{
+    display: flex;
+    flex-direction: column;
+}
+
+.NavLinkGroupMobile .NavLink{
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .NavbarMobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Navbar{
+        display: none;
+    }
 }
